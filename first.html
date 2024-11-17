@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <h1 id="headLine"></h1>
+        <h2 id="body"></h2>
+        <p id="surb"></p>
+        <input id="first" type="text" placeholder="Put in your registered email">
+        <input id="second" type="password" placeholder="Input password">
+        <button id="third">Hide password</button>
+        <button id="fourth" onclick="Darkmode()">Dark Mode</button>
+    </main>
+</body>
+
+</html>
+
+<script>
+    let myName = "Makaveli HUB";
+    console.log(myName);
+    alert ("You are in Makaveli Space")
+    // My first JS
+    document.getElementById("headLine").innerHTML = myName;
+    document.getElementById("headLine").style.textAlign = "center";
+    document.getElementById("headLine").style.color = "red";
+    document.getElementById("headLine").style.padding = "0 10px 0 10px"
+    document.getElementById("headLine").style.fontSize = "60px"
+    let myBody = "Makaveli HUB is the best place to sell your gift card and cryptocurrency "
+    console.log(myBody)
+    document.getElementById("body").innerHTML = myBody
+    document.getElementById("body").style.textAlign = "center"
+    document.getElementById("body").style.color = "green"
+    let mySurb = "Login to access your portfolio with Makaveli HUB"
+    console.log(mySurb)
+    document.getElementById("surb").innerHTML = mySurb
+    document.getElementById("surb").style.textAlign = "center"
+
+    document.getElementById("first").style.width = "300px"
+    document.getElementById("first").style.height = "30px"
+    document.getElementById("first").style.border = "1.3px solid black"
+    document.getElementById("first").style.borderRadius = "5px"
+    document.getElementById("first").style.paddingLeft = "10px"
+    document.getElementById("first").style.marginLeft = "200px"
+    document.getElementById("first").style.marginTop = "10px"
+
+
+
+
+    document.getElementById("second").style.display = "block"
+    document.getElementById("second").style.marginTop = "25px"
+    document.getElementById("second").style.width = "300px"
+    document.getElementById("second").style.height = "30px"
+    document.getElementById("second").style.marginLeft = "200px"
+    document.getElementById("second").style.border = "1.3px solid black"
+    document.getElementById("second").style.paddingLeft = "10px"
+    document.getElementById("second").style.borderRadius = "5px"
+
+
+    document.getElementById("third").style.marginTop = "10px"
+    document.getElementById("third").style.marginLeft = "200px"
+    document.getElementById("third").style.fontSize = "10px"
+    document.getElementById("third").style.color = "red"
+    document.getElementById("third").style.fontWeight = "600"
+    document.getElementById("third").style.backgroundColor = "white"
+    document.getElementById("third").style.border = "1px solid black"
+    document.getElementById("third").style.borderRadius = "3px"
+
+
+    document.getElementById("fourth").style.marginLeft = "160px"
+    document.getElementById("fourth").style.color = "green"
+    document.getElementById("fourth").style.fontSize = "10px"
+    document.getElementById("fourth").style.backgroundColor = "white"
+    document.getElementById("fourth").style.border = "1px solid black"
+    document.getElementById("fourth").style.borderRadius = "3px"
+    
+
+
+function Darkmode(onclick) {
+    if(document.body.style.backgroundColor == "black"){
+        document.body.style.backgroundColor = "white"
+        document.body.style.color = "black"
+    }else{
+        document.body.style.backgroundColor = "black"
+        document.body.style.color = "white"
+    }
+}
+
+</script>
