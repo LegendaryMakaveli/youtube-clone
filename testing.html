@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <input id="first" onclick="showText()" type="text">
+        <button onclick="showText()">Copy&Paste</button>
+        <h2 id="typeShit"></h2>
+    </main>
+</body>
+</html>
+
+<script>
+       let firstValue = document.getElementById("first");
+       let typeShit = document.getElementById("typeShit")
+       typeShit.innerHTML = ""
+
+       function showText(){
+         typeShit.innerHTML = first.value;
+       }
+</script>

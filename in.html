@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="inputBox">Type Shit Here:</h1></label>
+    <input type="text" id="inputBox" placeholder="start typing...">
+     <p>Show Test Here:<span id="output"></span></p>
+
+    <script>
+        // Get references to the input and output elements
+        let inputBox = document.getElementById("inputBox");
+        let output = document.getElementById("output");
+
+        //Listen for the 'input' event
+        inputBox.addEventListener('input', () => {
+         //Update the output element's text
+         output.textContent = inputBox.value;
+        });
+    </script>
+</body>
+</html>

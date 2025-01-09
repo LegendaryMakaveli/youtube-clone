@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .spec {
+            display: flex;
+        }
+
+        #ikka2 {
+            margin-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <input id="maka" type="text">
+        <input id="maka2" type="text">
+        <button onclick="showText()">Show Text</button>
+        <div class="spec">
+            <h1 id="ikka"></h1>
+            <h1 id="ikka2"></h1>
+        </div>
+    </main>
+</body>
+
+</html> 
+<script>
+    var maka = document.getElementById("maka");
+    var ikka = document.getElementById("ikka");
+    var maka2 = document.getElementById("maka2");
+    var ikka2 = document.getElementById("ikka2")
+    ikka.innerHTML = "";
+    ikka.innerHTML = "";
+
+    function showText() {
+        ikka.innerHTML = maka.value;
+        ikka2.innerHTML = maka2.value;
+        console.log(maka.value);
+        console.log(maka2.value);
+
+    }
+</script>
